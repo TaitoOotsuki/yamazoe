@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 
 def main():
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # インストールパスを確認して変更
+    pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'  # インストールパスを確認して変更
     # カメラを開く（PCに接続されているカメラを指定）
     cap = cv2.VideoCapture(0)  # 0は最初のカメラ。別のカメラを使う場合は1や2に変更
     
